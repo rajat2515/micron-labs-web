@@ -1,8 +1,188 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckSquare, ShieldCheck, Users, Award, Heart, Microscope, Package } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, CheckSquare, ShieldCheck, Users, Microscope, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+/* ─── SLIDE DATA ─────────────────────────────────────────────── */
+const slides = [
+    {
+        id: 1,
+        image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&h=900&fit=crop&q=80',
+        eyebrow: 'Welcome to Micron Labs',
+        heading: 'Touching Lives,\nEnriching Health...',
+        sub: 'Leading PCD pharmaceutical company delivering high-quality, affordable medicines across India since 2012.',
+        cta: { label: 'Explore Products', to: '/products' },
+        cta2: { label: 'Contact Us', to: '/contact' },
+    },
+    {
+        id: 2,
+        image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1920&h=900&fit=crop&q=80',
+        eyebrow: 'WHO-GMP Certified',
+        heading: 'Quality You Can\nTrust',
+        sub: 'Every product manufactured under strict WHO-GMP standards — delivering purity, safety, and efficacy in every dose.',
+        cta: { label: 'About Us', to: '/about' },
+        cta2: null,
+    },
+    {
+        id: 3,
+        image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&h=900&fit=crop&q=80',
+        eyebrow: 'PCD Pharma Franchise',
+        heading: 'Grow With\nMicron Labs',
+        sub: 'Join our trusted franchise network and build a thriving pharmaceutical business with monopoly rights and full promotional support.',
+        cta: { label: 'Become a Partner', to: '/contact' },
+        cta2: null,
+    },
+    {
+        id: 4,
+        image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1920&h=900&fit=crop&q=80',
+        eyebrow: '8+ Therapeutic Segments',
+        heading: '500+ Products\nAcross India',
+        sub: 'From analgesics and antibiotics to gynecology and dermatology — a complete portfolio for every healthcare need.',
+        cta: { label: 'View Products', to: '/products' },
+        cta2: null,
+    },
+];
+
+/* ─── HERO CAROUSEL ──────────────────────────────────────────── */
+const HeroCarousel = () => {
+    const [current, setCurrent] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const total = slides.length;
+
+    const next = useCallback(() => setCurrent(c => (c + 1) % total), [total]);
+    const prev = useCallback(() => setCurrent(c => (c - 1 + total) % total), [total]);
+
+    useEffect(() => {
+        if (paused) return;
+        const timer = setInterval(next, 5000);
+        return () => clearInterval(timer);
+    }, [next, paused]);
+
+    const slide = slides[current];
+
+    return (
+        <div
+            className="relative min-h-screen flex items-center overflow-hidden"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+        >
+            {/* Background crossfade */}
+            <AnimatePresence mode="sync">
+                <motion.div
+                    key={slide.id + '-bg'}
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url('${slide.image}')` }}
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                />
+            </AnimatePresence>
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-brand-navy/65" />
+
+            {/* Text Content */}
+            <div className="container mx-auto px-4 relative z-10 text-white py-12">
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={slide.id + '-content'}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.6 }}
+                        className="max-w-3xl"
+                    >
+                        {/* Eyebrow label */}
+                        <p className="text-primary-orange font-bold text-sm tracking-widest uppercase mb-3">
+                            {slide.eyebrow}
+                        </p>
+
+                        {/* Heading — h1 only on first slide for SEO */}
+                        {current === 0 ? (
+                            <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight whitespace-pre-line">
+                                {slide.heading}
+                            </h1>
+                        ) : (
+                            <h2 className="text-4xl md:text-6xl font-bold mb-4 leading-tight whitespace-pre-line">
+                                {slide.heading}
+                            </h2>
+                        )}
+
+                        {/* Description */}
+                        <p className="text-base md:text-xl mb-8 text-gray-200 max-w-2xl leading-relaxed">
+                            {slide.sub}
+                        </p>
+
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Link
+                                to={slide.cta.to}
+                                className="bg-primary-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 hover:shadow-lg flex items-center justify-center"
+                            >
+                                {slide.cta.label} <ArrowRight size={20} className="ml-2" />
+                            </Link>
+                            {slide.cta2 && (
+                                <Link
+                                    to={slide.cta2.to}
+                                    className="bg-transparent border-2 border-white hover:bg-white hover:text-brand-navy text-white px-8 py-4 rounded-lg font-semibold transition-all flex items-center justify-center"
+                                >
+                                    {slide.cta2.label}
+                                </Link>
+                            )}
+                        </div>
+                    </motion.div>
+                </AnimatePresence>
+            </div>
+
+            {/* Prev Arrow */}
+            <button
+                onClick={prev}
+                aria-label="Previous slide"
+                className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-primary-orange text-white flex items-center justify-center transition-all backdrop-blur-sm"
+            >
+                <ChevronLeft size={22} />
+            </button>
+
+            {/* Next Arrow */}
+            <button
+                onClick={next}
+                aria-label="Next slide"
+                className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-primary-orange text-white flex items-center justify-center transition-all backdrop-blur-sm"
+            >
+                <ChevronRight size={22} />
+            </button>
+
+            {/* Dot Indicators */}
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+                {slides.map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => setCurrent(i)}
+                        aria-label={`Go to slide ${i + 1}`}
+                        className={`rounded-full transition-all duration-300 ${i === current
+                                ? 'w-8 h-3 bg-primary-orange'
+                                : 'w-3 h-3 bg-white/50 hover:bg-white'
+                            }`}
+                    />
+                ))}
+            </div>
+
+            {/* Progress bar at very bottom */}
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20 z-20">
+                <motion.div
+                    key={current + '-progress'}
+                    className="h-full bg-primary-orange"
+                    initial={{ width: '0%' }}
+                    animate={{ width: paused ? '0%' : '100%' }}
+                    transition={{ duration: 5, ease: 'linear' }}
+                />
+            </div>
+        </div>
+    );
+};
+
+/* ─── HOME PAGE ──────────────────────────────────────────────── */
 const Home = () => {
     const productCategories = [
         { name: 'Antibiotics', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=300&fit=crop' },
@@ -15,89 +195,20 @@ const Home = () => {
 
     return (
         <div className="bg-white">
-            {/* Hero Section with Overlay */}
-            <section className="relative min-h-screen flex items-center overflow-hidden">
-                {/* Background Image */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
-                    }}
-                ></div>
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-brand-navy/70"></div>
-
-                <div className="container mx-auto px-4 relative z-10 text-white py-12">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="max-w-3xl"
-                    >
-                        <div className="mb-4">
-                            <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">Welcome to Micron Labs</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                            Empowering Healthcare <br /> Since <span className="text-primary-orange">2012</span>
-                        </h1>
-                        <p className="text-base md:text-xl mb-6 text-gray-200 max-w-2xl leading-relaxed">
-                            Leading PCD pharmaceutical company delivering high-quality, affordable medicines across India through our trusted franchise network.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Link
-                                to="/products"
-                                className="bg-primary-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 hover:shadow-lg flex items-center justify-center"
-                            >
-                                Explore Products <ArrowRight size={20} className="ml-2" />
-                            </Link>
-                            <Link
-                                to="/contact"
-                                className="bg-transparent border-2 border-white hover:bg-white hover:text-brand-navy text-white px-8 py-4 rounded-lg font-semibold transition-all flex items-center justify-center"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* Floating Value Cards */}
-            <section className="relative -mt-20 z-20 pb-16">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                        {[
-                            { icon: ShieldCheck, title: 'Quality Assurance', desc: 'WHO-GMP certified products' },
-                            { icon: Award, title: 'Trusted Brand', desc: '14+ years of excellence' },
-                            { icon: Package, title: 'Wide Range', desc: '70+ pharmaceutical products' },
-                            { icon: Heart, title: 'PCD Franchise', desc: 'Monopoly rights & support' },
-                        ].map((item, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="bg-white rounded-xl shadow-card hover:shadow-card-hover transition-all p-6 text-center"
-                            >
-                                <div className="w-16 h-16 mx-auto bg-primary-orange/10 text-primary-orange rounded-full flex items-center justify-center mb-4">
-                                    <item.icon size={32} />
-                                </div>
-                                <h3 className="text-lg font-bold mb-2 text-gray-800">{item.title}</h3>
-                                <p className="text-sm text-gray-600">{item.desc}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
+            {/* ── HERO CAROUSEL ── */}
+            <section aria-label="Micron Labs – Hero Slideshow">
+                <HeroCarousel />
             </section>
 
             {/* About Section */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-20 bg-white" aria-labelledby="about-heading">
                 <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Image */}
                         <div className="relative">
                             <img
                                 src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&h=600&fit=crop"
-                                alt="Pharmaceutical Lab"
+                                alt="Pharmaceutical Lab – Micron Labs"
                                 className="rounded-2xl shadow-lg w-full"
                             />
                             <div className="absolute -bottom-6 -right-6 bg-primary-orange text-white p-6 rounded-xl shadow-lg">
@@ -111,13 +222,13 @@ const Home = () => {
                             <div className="mb-4">
                                 <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">About Us</span>
                             </div>
-                            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+                            <h2 id="about-heading" className="text-4xl font-bold text-gray-800 mb-6">
                                 Leading PCD Pharmaceutical Company
                             </h2>
                             <p className="text-gray-600 mb-6 leading-relaxed">
                                 Micron Labs (P) Limited, established in 2012, is a premier PCD pharmaceutical company specializing in the distribution and marketing of high-quality pharmaceutical formulations. We have grown to become a trusted name in the industry with a commitment to quality, reliability, and accessible healthcare.
                             </p>
-                            <ul className="space-y-3 mb-8">
+                            <ul className="space-y-3 mb-8" aria-label="Key benefits">
                                 {['Quality Certified Products', 'Monopoly Rights for Partners', 'Marketing Support', 'Pan-India Distribution'].map((item, idx) => (
                                     <li key={idx} className="flex items-center text-gray-700">
                                         <div className="w-7 h-7 bg-primary-orange rounded flex items-center justify-center mr-3 flex-shrink-0">
@@ -139,11 +250,11 @@ const Home = () => {
             </section>
 
             {/* Product Categories */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-white" aria-labelledby="products-heading">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">Our Range</span>
-                        <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Product Categories</h2>
+                        <h2 id="products-heading" className="text-4xl font-bold text-gray-800 mt-2 mb-4">Product Categories</h2>
                         <div className="w-20 h-1 bg-primary-orange mx-auto"></div>
                     </div>
 
@@ -157,7 +268,7 @@ const Home = () => {
                                 <div className="h-64 overflow-hidden">
                                     <img
                                         src={category.image}
-                                        alt={category.name}
+                                        alt={`${category.name} – Micron Labs product category`}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
@@ -180,11 +291,11 @@ const Home = () => {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-gray-50" aria-labelledby="why-heading">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">Why Choose Us</span>
-                        <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Our Commitment to Excellence</h2>
+                        <h2 id="why-heading" className="text-4xl font-bold text-gray-800 mt-2 mb-4">Our Commitment to Excellence</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
