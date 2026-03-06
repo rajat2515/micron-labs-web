@@ -35,9 +35,9 @@ const slides = [
     {
         id: 4,
         image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1920&h=900&fit=crop&q=80',
-        eyebrow: '8+ Therapeutic Segments',
-        heading: '500+ Products\nAcross India',
-        sub: 'From analgesics and antibiotics to gynecology and dermatology — a complete portfolio for every healthcare need.',
+        eyebrow: '8 Therapeutic Segments',
+        heading: '70+ Products\nFor Every Need',
+        sub: 'Analgesics, Antibiotics, Vitamins, Gynecology, Gastroenterology, Dermatology, Cough & Cold, and Dental Care — all under one trusted brand.',
         cta: { label: 'View Products', to: '/products' },
         cta2: null,
     },
@@ -161,8 +161,8 @@ const HeroCarousel = () => {
                         onClick={() => setCurrent(i)}
                         aria-label={`Go to slide ${i + 1}`}
                         className={`rounded-full transition-all duration-300 ${i === current
-                                ? 'w-8 h-3 bg-primary-orange'
-                                : 'w-3 h-3 bg-white/50 hover:bg-white'
+                            ? 'w-8 h-3 bg-primary-orange'
+                            : 'w-3 h-3 bg-white/50 hover:bg-white'
                             }`}
                     />
                 ))}

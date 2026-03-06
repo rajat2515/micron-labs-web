@@ -36,10 +36,7 @@ const Header = () => {
                         <span className="flex items-center"><Phone size={14} className="mr-1" /> +91-9319275474 / 9319275478</span>
                         <span className="hidden sm:flex items-center"><Mail size={14} className="mr-1" /> micronlabspltd@gmail.com</span>
                     </div>
-                    <div className="font-semibold italic text-right leading-tight text-sm">
-                        <div>Touching lives</div>
-                        <div className="-mt-1 ml-4">Enriching health...</div>
-                    </div>
+
                 </div>
             </div>
 
@@ -52,8 +49,6 @@ const Header = () => {
                         <div className="flex flex-col leading-tight">
                             <span className={`text-2xl md:text-3xl font-bold font-futura transition-colors ${isScrolled ? 'text-brand-navy' : 'text-brand-navy md:text-white'
                                 }`}>Micron Labs (P) Limited</span>
-                            <span className="text-sm text-primary-orange font-medium font-futura italic">Touching lives</span>
-                            <span className="text-sm text-primary-orange font-medium font-futura italic -mt-0.5 ml-6">Enriching health...</span>
                         </div>
                     </Link>
 
