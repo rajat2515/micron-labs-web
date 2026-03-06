@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <div className="bg-white">
             {/* Hero Section with Overlay */}
-            <section className="relative h-[85vh] flex items-center overflow-hidden">
+            <section className="relative min-h-screen flex items-center overflow-hidden">
                 {/* Background Image */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
@@ -27,7 +27,7 @@ const Home = () => {
                 {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-brand-navy/70"></div>
 
-                <div className="container mx-auto px-4 relative z-10 text-white">
+                <div className="container mx-auto px-4 relative z-10 text-white py-12">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -37,10 +37,10 @@ const Home = () => {
                         <div className="mb-4">
                             <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">Welcome to Micron Labs</span>
                         </div>
-                        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
                             Empowering Healthcare <br /> Since <span className="text-primary-orange">2012</span>
                         </h1>
-                        <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl leading-relaxed">
+                        <p className="text-base md:text-xl mb-6 text-gray-200 max-w-2xl leading-relaxed">
                             Leading PCD pharmaceutical company delivering high-quality, affordable medicines across India through our trusted franchise network.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
