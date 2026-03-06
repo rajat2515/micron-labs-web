@@ -55,7 +55,7 @@ const About = () => {
                             <p className="text-gray-600 mb-8 leading-relaxed text-justify">
                                 Micron Labs (P) Limited, established in <strong>2012</strong>, is one of the leading organisations
                                 involved in the distribution, marketing, and third-party manufacturing of precisely formulated
-                                pharmaceutical products. We have a growing portfolio of <strong>70+ products</strong> across several
+                                pharmaceutical products. We have a growing portfolio of <strong>100+ products</strong> across several
                                 therapeutic segments including Gynae, Paediatric, Ortho, Cardiac-Diabetic, Derma, and General
                                 Medicine. Our manufacturing partners are <strong>WHO-GMP certified</strong> and equipped with
                                 cutting-edge technology. With franchise partners spread across India, we are successfully meeting
@@ -82,7 +82,7 @@ const About = () => {
                         <div className="grid grid-cols-2 gap-6">
                             {[
                                 { number: '14+', label: 'Years of Excellence' },
-                                { number: '70+', label: 'Products in Portfolio' },
+                                { number: '100+', label: 'Products in Portfolio' },
                                 { number: '10+', label: 'Therapeutic Segments' },
                                 { number: 'PAN', label: 'India Presence' },
                             ].map((stat, idx) => (

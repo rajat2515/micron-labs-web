@@ -36,7 +36,7 @@ const slides = [
         id: 4,
         image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1920&h=900&fit=crop&q=80',
         eyebrow: '8 Therapeutic Segments',
-        heading: '70+ Products\nFor Every Need',
+        heading: '100+ Products\nFor Every Need',
         sub: 'Analgesics, Antibiotics, Vitamins, Gynecology, Gastroenterology, Dermatology, Cough & Cold, and Dental Care — all under one trusted brand.',
         cta: { label: 'View Products', to: '/products' },
         cta2: null,
