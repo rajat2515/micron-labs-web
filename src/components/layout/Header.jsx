@@ -27,7 +27,7 @@ const Header = () => {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white shadow-sm md:bg-transparent md:shadow-none'
             }`}>
             {/* Top Bar */}
             <div className={`${isScrolled ? 'hidden' : 'block'} bg-primary-orange text-white py-2 text-xs sm:text-sm transition-all`}>
@@ -44,13 +44,13 @@ const Header = () => {
             </div>
 
             {/* Main Header */}
-            <div className={`${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} transition-all`}>
+            <div className={`${isScrolled ? 'bg-white' : 'bg-white md:bg-transparent'} transition-all`}>
                 <div className="container mx-auto px-4 py-5 flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-3">
                         <img src={logo} alt="Micron Labs Logo" className="h-16 w-auto" />
                         <div className="flex flex-col leading-tight">
-                            <span className={`text-2xl md:text-3xl font-bold font-futura transition-colors ${isScrolled ? 'text-brand-navy' : 'text-white'
+                            <span className={`text-2xl md:text-3xl font-bold font-futura transition-colors ${isScrolled ? 'text-brand-navy' : 'text-brand-navy md:text-white'
                                 }`}>Micron Labs (P) Limited</span>
                             <span className="text-sm text-primary-orange font-medium font-futura italic">Touching lives</span>
                             <span className="text-sm text-primary-orange font-medium font-futura italic -mt-0.5 ml-6">Enriching health...</span>
@@ -78,7 +78,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className={`md:hidden focus:outline-none transition-colors ${isScrolled ? 'text-gray-700' : 'text-white'
+                        className={`md:hidden focus:outline-none transition-colors ${isScrolled ? 'text-gray-700' : 'text-gray-700 md:text-white'
                             }`}
                         onClick={() => setIsOpen(!isOpen)}
                     >
