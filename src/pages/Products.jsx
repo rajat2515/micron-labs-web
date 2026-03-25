@@ -20,9 +20,9 @@ const categories = [
             { name: 'Dicodase-SN', composition: 'Serratiopeptidase 10mg + Diclofenac Potassium 50mg', form: 'Tablet', use: 'Inflammation, post-operative swelling, arthritis', price: '₹65 / strip of 10', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
             { name: 'Dicodase-SR', composition: 'Diclofenac Potassium 50mg + Serratiopeptidase 10mg + Paracetamol 325mg', form: 'Tablet', use: 'Osteoarthritis, rheumatoid arthritis, ankylosing spondylitis', price: '₹70 / strip of 10', image: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop' },
             { name: 'Drota Care', composition: 'Drotaverine HCl 80mg + Mefenamic Acid 250mg', form: 'Tablet', use: 'Smooth muscle spasms, uterine cramps, renal colic', price: '₹65 / strip of 10', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
-            { name: 'Drota Care-A', composition: 'Drotaverine HCl 80mg + Aceclofenac 100mg', form: 'Tablet', use: 'Spasmodic pain with inflammation, biliary colic', price: '₹93.50 / strip of 10', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
+            { name: 'Drota Care-A', composition: 'Drotaverine HCl 80mg + Aceclofenac 100mg', form: 'Tablet', use: 'Spasmodic pain with inflammation, biliary colic', price: '₹93.50 / strip of 10', image: '/products/img_11.jpeg' },
             { name: 'ED-60', composition: 'Etoricoxib 60mg', form: 'Tablet', use: 'Acute pain, osteoarthritis, rheumatoid arthritis', price: '₹93.50 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
-            { name: 'ED-90', composition: 'Etoricoxib 90mg', form: 'Tablet', use: 'Acute gout, osteoarthritis, rheumatoid arthritis', price: '₹112.50 / strip of 10', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
+            { name: 'ED-90', composition: 'Etoricoxib 90mg', form: 'Tablet', use: 'Acute gout, osteoarthritis, rheumatoid arthritis', price: '₹112.50 / strip of 10', image: '/products/img_5.jpeg' },
             { name: 'Microket-DT', composition: 'Ketorolac Tromethamine 10mg', form: 'Tablet', use: 'Acute short-term pain, post-operative pain', price: '₹46.50 / strip of 15', image: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop' },
             { name: 'Run Gel', composition: 'Diclofenac Diethylamine + Linseed Oil + Methyl Salicylate + Menthol', form: 'Gel', use: 'Topical pain relief, sports injuries, joint pain', price: '₹79.65 / 30g tube', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Bepred-4', composition: 'Methylprednisolone 4mg', form: 'Tablet', use: 'Inflammatory conditions, allergic disorders, rheumatic disorders', price: '₹46.80 / strip of 10', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
@@ -35,10 +35,10 @@ const categories = [
         desc: 'Broad-spectrum antibacterial medications',
         image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=300&fit=crop',
         products: [
-            { name: 'Cefbond-LB', composition: 'Cefixime 200mg + Lactic Acid Bacillus Spores', form: 'Tablet', use: 'Bacterial infections with gut protection', price: '₹140 / strip of 10', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
+            { name: 'Cefbond-LB', composition: 'Cefixime 200mg + Lactic Acid Bacillus Spores', form: 'Tablet', use: 'Bacterial infections with gut protection', price: '₹140 / strip of 10', image: '/products/img_4.jpeg' },
             { name: 'Cefbond-O', composition: 'Cefixime 200mg + Ofloxacin 200mg', form: 'Tablet', use: 'Respiratory, urinary tract & skin infections', price: '₹168 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
             { name: 'Micort-CV', composition: 'Cefpodoxime 200mg + Clavulanic Acid 125mg', form: 'Tablet', use: 'Severe respiratory & skin infections', price: '₹300 / strip of 10', image: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop' },
-            { name: 'Micort-50', composition: 'Cefpodoxime 50mg', form: 'Dry Syrup', use: 'Paediatric bacterial infections, ENT & respiratory infections', price: '₹75 / 30ml bottle', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
+            { name: 'Micort-50', composition: 'Cefpodoxime 50mg', form: 'Dry Syrup', use: 'Paediatric bacterial infections, ENT & respiratory infections', price: '₹75 / 30ml bottle', image: '/products/img_1.png' },
             { name: 'Moxychoice-500', composition: 'Amoxycillin 500mg', form: 'Tablet', use: 'ENT, respiratory, dental & urinary infections', price: '₹78.50 / strip of 10', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Moxychoice-CL375', composition: 'Amoxycillin 250mg + Clavulanic Acid 125mg', form: 'Tablet', use: 'Mixed bacterial infections, ENT & respiratory', price: '₹150 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
             { name: 'Moxychoice-CL625', composition: 'Amoxycillin 500mg + Clavulanic Acid 125mg + Lactic Acid Bacillus 60M Spores', form: 'Tablet', use: 'Severe bacterial infections with gut protection', price: '₹215 / strip of 10', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
@@ -70,10 +70,10 @@ const categories = [
         products: [
             { name: 'Calonate-D', composition: 'Calcium Carbonate 1250mg (Elemental Calcium 500mg) + Vitamin D3 250 IU', form: 'Tablet', use: 'Calcium deficiency, osteoporosis, pregnancy supplementation', price: '₹37.50 / strip of 15', image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop' },
             { name: 'Calonate-K27', composition: 'Calcium Carbonate 500mg + Calcitriol 0.25mcg + Vitamin K2-7 45mcg + Methylcobalamin 1500mcg + Magnesium Hydroxide 50mg + Zinc Sulphate 7.5mg + L-Methyl Folate 800mcg', form: 'Tablet', use: 'Bone health, calcium absorption, osteoporosis prevention', price: '₹133.50 / strip of 10', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
-            { name: 'Calonate', composition: 'Cholecalciferol 60,000 IU', form: 'Sachet (1g)', use: 'Vitamin D3 deficiency, bone health, immunity', price: '₹23.40 / sachet', image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop' },
+            { name: 'Calonate', composition: 'Cholecalciferol 60,000 IU', form: 'Sachet (1g)', use: 'Vitamin D3 deficiency, bone health, immunity', price: '₹23.40 / sachet', image: '/products/img_6.jpeg' },
             { name: 'Microred-XT', composition: 'Ferrous Bisglycinate 60mg + Zinc Bisglycinate 15mg + Folic Acid 1mg + Methylcobalamin 500mcg', form: 'Tablet', use: 'Iron deficiency anemia, pregnancy, fatigue', price: '₹112.50 / strip of 15', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
             { name: 'Microred-F', composition: 'Ferric Ammonium Citrate 160mg (Elemental Iron 32mg) + Cyanocobalamin 15mcg + Folic Acid 1.5mg', form: 'Syrup (200ml)', use: 'Nutritional anemia, malnutrition, post-operative recovery', price: '₹117.15 / 200ml bottle', image: 'https://images.unsplash.com/photo-1608459683633-f85793f8e5b1?w=400&h=300&fit=crop' },
-            { name: 'Oxychoice (Multivitamin)', composition: 'Lycopene 2mg + Ascorbic Acid 25mg + Nicotinamide 15mg + Vitamins A, B1, B2, B6, B12, D, E + Folic Acid + Zinc + Iron + Magnesium + Selenium + Chromium + Iodine', form: 'Tablet', use: 'General wellness, immunity boost, nutritional gaps', price: '₹80 / strip of 10', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
+            { name: 'Oxychoice (Multivitamin)', composition: 'Lycopene 2mg + Ascorbic Acid 25mg + Nicotinamide 15mg + Vitamins A, B1, B2, B6, B12, D, E + Folic Acid + Zinc + Iron + Magnesium + Selenium + Chromium + Iodine', form: 'Tablet', use: 'General wellness, immunity boost, nutritional gaps', price: '₹80 / strip of 10', image: '/products/img_13.jpeg' },
             { name: 'Oxychoice (Paediatric)', composition: 'Vitamin A 2000 IU + Vitamin E 10 IU + Vitamins B1, B2, B3, C + Cyanocobalamin + Folic Acid + Zinc + Calcium + Chromium + Selenium', form: 'Tablet', use: 'Paediatric nutrition, growth support, immunity', price: '₹42 / strip of 10', image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop' },
             { name: 'Oxychoice (Protein)', composition: 'Protein Hydrolysate 20% + Calcium + DHA + GLA + Vitamins B6, B12, D3 + Niacinamide + Folic Acid + Zinc + Iron + Magnesium + Selenium + Iodine', form: 'Powder (200g)', use: 'Nutritional supplement, post-illness recovery, growth', price: '₹222.46 / 200g jar', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
             { name: 'Get Start-Plus', composition: 'Methylcobalamin 1500mcg + Vitamin B1 1.5mg + Vitamin B2 1mg + Vitamin B6 0.5mg + Zinc 2mg + Niacinamide 15mg + L-Lysine 25mg', form: 'Syrup (200ml)', use: 'Nerve health, appetite stimulation, nutritional deficiency', price: '₹131.25 / 200ml bottle', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
@@ -93,7 +93,7 @@ const categories = [
             { name: 'Panashot-40', composition: 'Pantoprazole Sodium 40mg', form: 'Tablet', use: 'Acid reflux, peptic ulcer disease, GERD', price: '₹75 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
             { name: 'Panashot-DSR', composition: 'Pantoprazole Sodium 40mg + Domperidone 30mg SR', form: 'Capsule', use: 'GERD, dyspepsia, nausea with acid suppression', price: '₹89 / strip of 10', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Okzyme (Tablet)', composition: 'Pancreatin 175mg + Simethicone 50mg + Activated Charcoal 50mg', form: 'Tablet', use: 'Flatulence, bloating, indigestion, malabsorption', price: '₹60.50 / strip of 10', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
-            { name: 'Okzyme (Syrup)', composition: 'Fungal Diastase 50mg + Pepsin 10mg per 5ml', form: 'Syrup (200ml)', use: 'Digestive enzyme deficiency, dyspepsia, appetite stimulation', price: '₹126.55 / 200ml bottle', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
+            { name: 'Okzyme (Syrup)', composition: 'Fungal Diastase 50mg + Pepsin 10mg per 5ml', form: 'Syrup (200ml)', use: 'Digestive enzyme deficiency, dyspepsia, appetite stimulation', price: '₹126.55 / 200ml bottle', image: '/products/img_2.jpeg' },
             { name: 'Microdom-C', composition: 'Cinnarizine 20mg + Domperidone 15mg', form: 'Tablet', use: 'Nausea, vomiting, motion sickness, vertigo', price: '₹37.50 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
             { name: 'Microraft', composition: 'Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate', form: 'Suspension (150ml)', use: 'Acid reflux, heartburn, GERD', price: '₹145.30 / 150ml bottle', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Yocid', composition: 'Magaldrate 400mg + Simethicone 20mg', form: 'Suspension (170ml)', use: 'Hyperacidity, peptic ulcer, flatulence', price: '₹79.65 / 170ml bottle', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
@@ -102,7 +102,7 @@ const categories = [
             { name: 'Heptalife-DS (Tablet)', composition: 'Kalmegha 40mg + Bhringraj 40mg + Pitapapad 30mg + Bhuamala 30mg + Makoy 40mg + Kutaj 40mg + Kutki 10mg + Sarpunkha 10mg + Kasni 30mg + Punarava 40mg + Kumari 30mg + Kauohini 25mg + Arogya Vardhani Rasa 80mg + Navayas Lauha 20mg + Shankh Bhasam 20mg', form: 'Tablet (60s)', use: 'Liver tonic, hepatoprotective, jaundice, liver detox', price: '₹23 / bottle of 60', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Heptalife-DS (Drops)', composition: 'Punernava 100mg + Kasni 25mg + Kasundi 25mg + Saunf 50mg + Hauber 50mg + Makoy 15mg + Bhringraj 50mg + Kalmegh 15mg + Kutki 15mg + Arjun Twak 50mg + Guduchi 100mg + Nisotha 30mg + Baibidang 30mg + Daru Harida 30mg', form: 'Drops (30ml)', use: 'Paediatric liver tonic, jaundice, digestive health', price: '₹65.60 / 30ml bottle', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
             { name: 'Heptalife-DS (Syrup)', composition: 'Andrographis Paniculata 200mg + Cassia Acutifolia 250mg + Cichorium Intybus 500mg + Eclipta Alba 500mg + Phyllanthus Niruri 500mg + Boerhaavia Diffusa 250mg + Terminalia Chebula 300mg + Picrorhiza Kurroa 50mg + Fumaria Indica 300mg + Solanum Nigrum 100mg + Silymarin 140mg', form: 'Syrup (200ml)', use: 'Liver protection, hepatitis, fatty liver, liver detox', price: '₹121.85 / 200ml bottle', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
-            { name: 'Heptalife-UD300', composition: 'Ursodeoxycholic Acid 300mg', form: 'Tablet', use: 'Primary biliary cholangitis, gallstones, liver disorders', price: '₹346.50 / strip of 10', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
+            { name: 'Heptalife-UD300', composition: 'Ursodeoxycholic Acid 300mg', form: 'Tablet', use: 'Primary biliary cholangitis, gallstones, liver disorders', price: '₹346.50 / strip of 10', image: '/products/img_8.jpeg' },
             { name: 'Heptalife (Injection)', composition: 'L-Ornithine L-Aspartate 5mg/10ml', form: 'Injection (10ml)', use: 'Hepatic encephalopathy, liver failure support', price: '₹260 / vial', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
         ],
     },
@@ -114,13 +114,13 @@ const categories = [
         products: [
             { name: 'Femnicare (Tablet)', composition: 'Ashoka Chhal 50mg + Lodhra 50mg + Majju Phal 25mg + Supari 50mg + Nagkesar 50mg + Ashwagandha 12.5mg + Pipal 12.5mg + Kaunch Beej 25mg + Manjistha 50mg + Nagarmotha 30mg + Mochras 50mg + Kukutandtvak Bhasam 20mg + Sfutika Bhasam 20mg', form: 'Tablet', use: 'Menstrual health, uterine toning, hormonal balance', price: '₹65 / strip of 10', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
             { name: 'Femnicare (Syrup)', composition: 'Saraca Indica 600mg + Ashwagandha 300mg + Shatavari 150mg + Lodhra 300mg + Punica Granatum 300mg + Terminalia Chebula 150mg + Sida Cordifolia 300mg + Berberis Aristata 300mg + Cyperus Rotundus 300mg', form: 'Syrup (200ml)', use: 'Women\'s uterine health, menstrual irregularities, leucorrhoea', price: '₹121.85 / 200ml bottle', image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop' },
-            { name: 'Fetalife (Tablet)', composition: 'Allylestrenol 5mg', form: 'Tablet', use: 'Threatened miscarriage, recurrent abortion, IVF support', price: '₹117 / strip of 10', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
-            { name: 'Fetalife-500', composition: 'Hydroxyprogesterone 500mg/2ml', form: 'Injection (2ml)', use: 'Prevention of preterm birth, recurrent miscarriage', price: '₹210.90 / vial', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
+            { name: 'Fetalife (Tablet)', composition: 'Allylestrenol 5mg', form: 'Tablet', use: 'Threatened miscarriage, recurrent abortion, IVF support', price: '₹117 / strip of 10', image: '/products/img_7.jpeg' },
+            { name: 'Fetalife-500', composition: 'Hydroxyprogesterone 500mg/2ml', form: 'Injection (2ml)', use: 'Prevention of preterm birth, recurrent miscarriage', price: '₹210.90 / vial', image: '/products/img_9.jpeg' },
             { name: 'Deuron', composition: 'Norethisterone 5mg', form: 'Tablet', use: 'Menstrual irregularities, endometriosis, PCOS management', price: '₹56 / strip of 10', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
             { name: 'Morefresh-F', composition: 'Doxylamine Succinate 10mg + Pyridoxine HCl 10mg + Folic Acid 2.5mg', form: 'Tablet', use: 'Morning sickness, pregnancy-induced nausea & vomiting', price: '₹51.50 / strip of 10', image: 'https://images.unsplash.com/photo-1608459683633-f85793f8e5b1?w=400&h=300&fit=crop' },
             { name: 'Iro-40 SR', composition: 'Isoxsuprine Hydrochloride 40mg SR', form: 'Tablet', use: 'Preterm labour, threatened abortion, uterine relaxation', price: '₹107.50 / strip of 10', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
             { name: 'Get Charge-P', composition: 'Carica Papaya 1100mg + Goat Milk Powder 50mg + Tinospora Cordifolia 150mg + Ocimum Sanctum 50mg', form: 'Tablet', use: 'Platelet enhancement, dengue fever support, immunity', price: '₹280 / pack of 30', image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=300&fit=crop' },
-            { name: 'Uristrong-KM', composition: 'Potassium Citrate 714.9mg + Magnesium Citrate 263.10mg + D-Mannose 300mg + Cranberry Extract 200mg', form: 'Sachet (10g)', use: 'UTI management, kidney stones, burning micturition', price: '₹311.50 / pack of 10 sachets', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop' },
+            { name: 'Uristrong-KM', composition: 'Potassium Citrate 714.9mg + Magnesium Citrate 263.10mg + D-Mannose 300mg + Cranberry Extract 200mg', form: 'Sachet (10g)', use: 'UTI management, kidney stones, burning micturition', price: '₹311.50 / pack of 10 sachets', image: '/products/img_10.jpeg' },
             { name: 'Uristrong', composition: 'Shuddha Shilajeet 200mg + Shwet Parpati 150mg + Gokshru 450mg + Punernava 500mg + Pashan Bhed 200mg + Potassium Nitrate 85mg + Green Tea Extract 50mg', form: 'Syrup (100ml)', use: 'UTI, burning micturition, renal calculi, impaired renal function', price: '₹119 / 100ml bottle', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
         ],
     },
@@ -132,8 +132,8 @@ const categories = [
         products: [
             { name: 'Noich-100', composition: 'Itraconazole 100mg', form: 'Capsule', use: 'Fungal infections: onychomycosis, tinea, candidiasis', price: '₹121.50 / strip of 10', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=300&fit=crop' },
             { name: 'Noich-LZ', composition: 'Luliconazole 1% + Beclomethasone 0.025% + Neomycin 0.05%', form: 'Cream (15g)', use: 'Fungal infections with inflammation & secondary bacterial infection', price: '₹93.75 / 15g tube', image: 'https://images.unsplash.com/photo-1608459683633-f85793f8e5b1?w=400&h=300&fit=crop' },
-            { name: 'Noich Malham', composition: 'Neem Patra + Madhyantrika + Ghrit Kumari + Daru Haldi + Gandhak 500mg + Kapoor 500mg + Salicylic Acid 500mg + Neem Oil + Karanj Oil', form: 'Ointment (100g)', use: 'Fungal skin infections, scabies, eczema, psoriasis', price: '₹234.35 / 100g jar', image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop' },
-            { name: 'Microdec-25', composition: 'Nandrolone Decanoate 25mg/ml', form: 'Injection (1ml)', use: 'Anemia, muscle wasting, post-surgical recovery', price: '₹65.60 / vial', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
+            { name: 'Noich Malham', composition: 'Neem Patra + Madhyantrika + Ghrit Kumari + Daru Haldi + Gandhak 500mg + Kapoor 500mg + Salicylic Acid 500mg + Neem Oil + Karanj Oil', form: 'Ointment (100g)', use: 'Fungal skin infections, scabies, eczema, psoriasis', price: '₹234.35 / 100g jar', image: '/products/img_14.jpeg' },
+            { name: 'Microdec-25', composition: 'Nandrolone Decanoate 25mg/ml', form: 'Injection (1ml)', use: 'Anemia, muscle wasting, post-surgical recovery', price: '₹65.60 / vial', image: '/products/img_12.jpeg' },
         ],
     },
     {
@@ -142,7 +142,7 @@ const categories = [
         desc: 'Oral health and hygiene',
         image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&h=300&fit=crop',
         products: [
-            { name: 'Cavifree Dental Gel', composition: 'Potassium Nitrate 5% + Sodium Monofluorophosphate 0.7% + Triclosan 0.3%', form: 'Gel (50g)', use: 'Cavity prevention, sensitive teeth, gum protection', price: '₹70.30 / 50g tube', image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop' },
+            { name: 'Cavifree Dental Gel', composition: 'Potassium Nitrate 5% + Sodium Monofluorophosphate 0.7% + Triclosan 0.3%', form: 'Gel (50g)', use: 'Cavity prevention, sensitive teeth, gum protection', price: '₹70.30 / 50g tube', image: '/products/img_3.jpeg' },
             { name: 'Cavifree Gumpaint', composition: 'Tannic Acid Glycerin 20% + Iodine 0.3% + Potassium Iodide 0.05% + Menthol 0.5% + Thymol 0.033% + Glycerine 79%', form: 'Gel (15ml)', use: 'Gingivitis, periodontitis, oral ulcers, toothache', price: '₹65.60 / 15ml tube', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop' },
         ],
     },
@@ -174,83 +174,80 @@ const ProductModal = ({ product, onClose }) => {
     return (
         <AnimatePresence>
             <motion.div
-                className="fixed inset-0 z-50 flex items-center justify-center p-4"
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={onClose}
             >
                 {/* Blurred translucent overlay */}
-                <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
                 {/* Modal Card */}
                 <motion.div
-                    className="relative z-10 w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl"
-                    style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.3)' }}
-                    initial={{ scale: 0.7, opacity: 0, y: 60 }}
+                    className="relative z-10 w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col transition-all max-h-[90vh] overflow-y-auto"
+                    initial={{ scale: 0.9, opacity: 0, y: 30 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
-                    exit={{ scale: 0.7, opacity: 0, y: 60 }}
-                    transition={{ type: 'spring', damping: 22, stiffness: 280 }}
+                    exit={{ scale: 0.9, opacity: 0, y: 30 }}
+                    transition={{ type: 'spring', damping: 25, stiffness: 300 }}
                     onClick={e => e.stopPropagation()}
                 >
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-3 right-3 z-20 w-8 h-8 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all"
+                        className="absolute top-4 right-4 z-20 w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-600 transition-colors"
                     >
                         <X size={18} />
                     </button>
 
-                    {/* Product Image */}
-                    <div className="relative h-52 overflow-hidden">
+                    {/* Product Image Area - Clean White */}
+                    <div className="relative h-72 sm:h-80 w-full bg-white flex items-center justify-center p-6 border-b border-gray-100">
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain drop-shadow-md"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                        <div className="absolute bottom-4 left-5 text-white">
-                            <h3 className="text-2xl font-bold drop-shadow">{product.name}</h3>
-                            <span className="text-xs bg-primary-orange px-2 py-0.5 rounded-full font-semibold mt-1 inline-block">{product.form}</span>
-                        </div>
                     </div>
 
-                    {/* Details */}
-                    <div className="p-5 space-y-4 text-white">
+                    {/* Details Area */}
+                    <div className="p-6 bg-gray-50 flex flex-col gap-4">
+                        {/* Title & Badge */}
+                        <div>
+                            <div className="flex items-center gap-3 mb-2">
+                                <h3 className="text-2xl font-bold text-gray-800 leading-tight">{product.name}</h3>
+                            </div>
+                            <span className="inline-block text-[10px] uppercase tracking-wider font-bold bg-orange-100 text-primary-orange px-2.5 py-1 rounded-md">
+                                {product.form}
+                            </span>
+                        </div>
+
                         {/* Price */}
-                        <div className="flex items-center gap-2 bg-primary-orange/80 rounded-xl px-4 py-3">
-                            <IndianRupee size={18} className="flex-shrink-0" />
+                        <div className="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                            <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-primary-orange">
+                                <IndianRupee size={20} />
+                            </div>
                             <div>
-                                <p className="text-[10px] uppercase tracking-widest opacity-80 font-semibold">MRP</p>
-                                <p className="font-bold text-lg leading-tight">{product.price}</p>
+                                <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-0.5">MRP</p>
+                                <p className="font-bold text-xl text-gray-800 leading-none">{product.price}</p>
                             </div>
                         </div>
 
-                        {/* Composition / Salt */}
-                        <div className="bg-white/15 rounded-xl px-4 py-3">
-                            <div className="flex items-center gap-2 mb-1">
-                                <FlaskConical size={15} className="text-orange-300 flex-shrink-0" />
-                                <p className="text-[10px] uppercase tracking-widest font-bold opacity-80">Composition / Salt</p>
+                        {/* Composition */}
+                        <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                            <div className="flex items-center gap-2 mb-2">
+                                <FlaskConical size={16} className="text-primary-orange" />
+                                <p className="text-xs uppercase tracking-widest font-bold text-gray-500">Composition / Salt</p>
                             </div>
-                            <p className="text-sm leading-relaxed">{product.composition}</p>
+                            <p className="text-sm text-gray-700 leading-relaxed font-medium">{product.composition}</p>
                         </div>
 
-                        {/* Indications */}
-                        <div className="bg-white/15 rounded-xl px-4 py-3">
-                            <div className="flex items-center gap-2 mb-1">
-                                <Stethoscope size={15} className="text-orange-300 flex-shrink-0" />
-                                <p className="text-[10px] uppercase tracking-widest font-bold opacity-80">Indicated For</p>
+                        {/* Indication */}
+                        <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Stethoscope size={16} className="text-primary-orange" />
+                                <p className="text-xs uppercase tracking-widest font-bold text-gray-500">Indicated For</p>
                             </div>
-                            <p className="text-sm leading-relaxed">{product.use}</p>
-                        </div>
-
-                        {/* Form */}
-                        <div className="bg-white/15 rounded-xl px-4 py-3">
-                            <div className="flex items-center gap-2 mb-1">
-                                <Tag size={15} className="text-orange-300 flex-shrink-0" />
-                                <p className="text-[10px] uppercase tracking-widest font-bold opacity-80">Dosage Form</p>
-                            </div>
-                            <p className="text-sm">{product.form}</p>
+                            <p className="text-sm text-gray-700 leading-relaxed font-medium">{product.use}</p>
                         </div>
                     </div>
                 </motion.div>
@@ -261,45 +258,38 @@ const ProductModal = ({ product, onClose }) => {
 
 /* ─── PRODUCT CARD ──────────────────────────────────────────── */
 const ProductCard = ({ product, onSelect }) => {
-    const [hovered, setHovered] = useState(false);
-
     return (
         <motion.div
-            whileHover={{ y: -6, scale: 1.03 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className="rounded-xl overflow-hidden shadow-md cursor-pointer bg-white group"
-            style={{ border: '1px solid rgba(0,0,0,0.07)' }}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
+            whileHover={{ y: -6, scale: 1.02 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+            className="rounded-lg overflow-hidden shadow-md hover:shadow-2xl cursor-pointer bg-white group flex flex-col h-full border border-gray-100 transition-all duration-300"
             onClick={() => onSelect(product)}
         >
-            {/* Product image */}
-            <div className="relative h-36 overflow-hidden">
+            {/* Full-bleed Portrait Product image */}
+            <div className="relative h-[320px] sm:h-[360px] w-full bg-gray-50 overflow-hidden">
                 <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                {/* Form badge */}
-                <span className="absolute top-2 right-2 text-[10px] font-bold bg-primary-orange text-white px-2 py-0.5 rounded-full">
-                    {product.form}
-                </span>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/60 transition-colors duration-300 pointer-events-none" />
+                
+                {/* Overlay details that appear on shadow/hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 z-20">
+                    <p className="text-white text-xs font-semibold leading-relaxed mb-4 line-clamp-4 drop-shadow-md">
+                        {product.composition}
+                    </p>
+                    <div className="flex items-center justify-between">
+                        <span className="text-white font-extrabold text-xl shadow-black drop-shadow-lg">{product.price}</span>
+                        <span className="text-primary-orange font-bold text-[10px] uppercase tracking-widest bg-white px-3 py-1.5 rounded-sm shadow-lg">Explore</span>
+                    </div>
+                </div>
             </div>
 
-            {/* Info */}
-            <div className="p-3">
-                <h4 className="font-bold text-gray-800 text-sm leading-tight mb-1">{product.name}</h4>
-
-                {/* Animated composition reveal on hover */}
-                <div className="overflow-hidden transition-all duration-300" style={{ maxHeight: hovered ? '60px' : '0px', opacity: hovered ? 1 : 0 }}>
-                    <p className="text-[10px] text-gray-500 leading-relaxed line-clamp-3">{product.composition}</p>
-                </div>
-
-                <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
-                    <span className="text-primary-orange font-bold text-xs">{product.price}</span>
-                    <span className="text-[10px] text-gray-400 font-medium">Click for details →</span>
-                </div>
+            {/* Solid Color Bottom Bar (Matching Reference) */}
+            <div className="bg-[#eea137] p-4 flex flex-col justify-center items-center text-center min-h-[70px]">
+                <h4 className="font-bold text-white text-[15px] sm:text-base leading-tight w-full drop-shadow-sm">{product.name}</h4>
+                <p className="text-white/90 text-[10px] uppercase tracking-wider font-semibold mt-1 drop-shadow-sm">{product.form}</p>
             </div>
         </motion.div>
     );
@@ -349,7 +339,7 @@ const CategorySection = ({ cat, index, onSelect }) => {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                     >
-                        <div className="p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                        <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                             {cat.products.map((product, pidx) => (
                                 <ProductCard key={pidx} product={product} onSelect={onSelect} />
                             ))}
