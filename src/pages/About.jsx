@@ -52,7 +52,7 @@ const About = () => {
                             <h2 className="text-4xl font-bold text-gray-900 mt-3 mb-6 leading-tight">
                                 We Offer PCD Pharma &amp; Third-Party Manufacturing with 14+ Years of Proven Industry Experience
                             </h2>
-                            <p className="text-gray-600 mb-8 leading-relaxed text-justify">
+                            <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                                 Micron Labs (P) Limited, established in <strong>2012</strong>, is one of the leading organisations
                                 involved in the distribution, marketing, and third-party manufacturing of precisely formulated
                                 pharmaceutical products. We have a growing portfolio of <strong>100+ products</strong> across several
@@ -61,6 +61,11 @@ const About = () => {
                                 cutting-edge technology. With franchise partners spread across India, we are successfully meeting
                                 our clients' demands by offering unique product portfolios that include tablets, capsules, syrups,
                                 injectables, ointments, and drops.
+                            </p>
+                            <p className="text-gray-600 mb-8 leading-relaxed text-justify">
+                                Our company is engaged in the marketing and distribution of high-quality pharmaceutical products across various regions of India. 
+                                In certain key areas, we manage marketing operations directly, while in other selected territories we provide exclusive monopoly and marketing rights to experienced distributors and business associates. 
+                                We are committed to offering strong marketing support, better business opportunities, and long-term professional relationships to our associates.
                             </p>
 
                             <div className="space-y-6">
