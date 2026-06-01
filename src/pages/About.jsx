@@ -59,12 +59,12 @@ const About = () => {
                                 therapeutic segments including Gynae, Paediatric, Ortho, Cardiac-Diabetic, Derma, and General
                                 Medicine. Our manufacturing partners are <strong>WHO-GMP certified</strong> and equipped with
                                 cutting-edge technology. With franchise partners spread across India, we are successfully meeting
-                                our clients' demands by offering unique product portfolios that include tablets, capsules, syrups,
-                                injectables, ointments, and drops.
+                                our clients' demands by offering unique product portfolios that include Tablets, Capsules,Syrups, Injectables,Dry Syrups,Creams,
+                                Gels,Ointments, Eye Drops, nasal Drop, Vitamins & Nutraceuticals.
                             </p>
                             <p className="text-gray-600 mb-8 leading-relaxed text-justify">
-                                Our company is engaged in the marketing and distribution of high-quality pharmaceutical products across various regions of India. 
-                                In certain key areas, we manage marketing operations directly, while in other selected territories we provide exclusive monopoly and marketing rights to experienced distributors and business associates. 
+                                Our company is engaged in the marketing and distribution of high-quality pharmaceutical products across various regions of India.
+                                In certain key areas, we manage marketing operations directly, while in other selected territories we provide exclusive monopoly and marketing rights to experienced distributors and business associates.
                                 We are committed to offering strong marketing support, better business opportunities, and long-term professional relationships to our associates.
                             </p>
 
