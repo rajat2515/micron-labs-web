@@ -50,7 +50,7 @@ const About = () => {
                         <div>
                             <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">About Us</span>
                             <h2 className="text-4xl font-bold text-gray-900 mt-3 mb-6 leading-tight">
-                                We Offer PCD Pharma &amp; Third-Party Manufacturing with 14+ Years of Proven Industry Experience
+                                Where We Market, We Lead. Where We Partner, We Empower.
                             </h2>
                             <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                                 Micron Labs (P) Limited, established in <strong>2012</strong>, is one of the leading organisations
@@ -62,10 +62,14 @@ const About = () => {
                                 our clients' demands by offering unique product portfolios that include Tablets, Capsules,Syrups, Injectables,Dry Syrups,Creams,
                                 Gels,Ointments, Eye Drops, nasal Drop, Vitamins & Nutraceuticals.
                             </p>
+                            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
+                                Micron Labs Pvt. Ltd. is a leading pharmaceutical company committed to delivering high-quality and affordable healthcare solutions across India. We actively manage marketing and distribution operations in several regions through our dedicated network and business associates.
+                            </p>
+                            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
+                                In selected territories, districts, and regions, we offer Exclusive Monopoly Franchise Opportunities to eligible professionals and business partners. Our franchise associates receive comprehensive support including quality products, promotional materials, branding assistance, timely product supply, and professional business guidance.
+                            </p>
                             <p className="text-gray-600 mb-8 leading-relaxed text-justify">
-                                Our company is engaged in the marketing and distribution of high-quality pharmaceutical products across various regions of India.
-                                In certain key areas, we manage marketing operations directly, while in other selected territories we provide exclusive monopoly and marketing rights to experienced distributors and business associates.
-                                We are committed to offering strong marketing support, better business opportunities, and long-term professional relationships to our associates.
+                                We believe in building long-term partnerships while expanding access to quality healthcare and pharmaceutical products throughout the country.
                             </p>
 
                             <div className="space-y-6">
@@ -120,7 +124,7 @@ const About = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
                             <p className="text-gray-600 leading-relaxed">
-                                To deliver high-quality, affordable pharmaceutical products through our PCD franchise network that improve healthcare accessibility and enhance the well-being of communities across India.
+                                To deliver high-quality, affordable pharmaceutical products through our dedicated franchise network that improve healthcare accessibility and enhance the well-being of communities across India.
                             </p>
                         </div>
 
@@ -130,7 +134,7 @@ const About = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
                             <p className="text-gray-600 leading-relaxed">
-                                To be a leading PCD pharmaceutical company recognized for quality products, strong franchise partnerships, and customer-centric distribution solutions across India.
+                                To be a leading pharmaceutical company recognized for quality products, strong franchise partnerships, and customer-centric distribution solutions across India.
                             </p>
                         </div>
 

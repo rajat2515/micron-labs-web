@@ -10,7 +10,7 @@ const slides = [
         image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&h=900&fit=crop&q=80',
         eyebrow: 'Welcome to Micron Labs',
         heading: 'Touching Lives,\nEnriching Health...',
-        sub: 'Leading PCD pharmaceutical company delivering high-quality, affordable medicines across India since 2012.',
+        sub: 'Leading pharmaceutical company delivering high-quality, affordable medicines across India since 2012.',
         cta: { label: 'Explore Products', to: '/products' },
         cta2: { label: 'Contact Us', to: '/contact' },
     },
@@ -26,7 +26,7 @@ const slides = [
     {
         id: 3,
         image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&h=900&fit=crop&q=80',
-        eyebrow: 'PCD Pharma Franchise',
+        eyebrow: 'Exclusive Pharma Franchise',
         heading: 'Grow With\nMicron Labs',
         sub: 'Join our trusted franchise network and build a thriving pharmaceutical business with monopoly rights and full promotional support.',
         cta: { label: 'Become a Partner', to: '/contact' },
@@ -223,10 +223,10 @@ const Home = () => {
                                 <span className="text-primary-orange font-bold text-sm tracking-widest uppercase">About Us</span>
                             </div>
                             <h2 id="about-heading" className="text-4xl font-bold text-gray-800 mb-6">
-                                Leading PCD Pharmaceutical Company
+                                Leading Pharmaceutical Company
                             </h2>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Micron Labs (P) Limited, established in 2012, is a premier PCD pharmaceutical company specializing in the distribution and marketing of high-quality pharmaceutical formulations. We have grown to become a trusted name in the industry with a commitment to quality, reliability, and accessible healthcare.
+                                Micron Labs (P) Limited, established in 2012, is a premier pharmaceutical company specializing in the distribution and marketing of high-quality pharmaceutical formulations. We have grown to become a trusted name in the industry with a commitment to quality, reliability, and accessible healthcare.
                             </p>
                             <ul className="space-y-3 mb-8" aria-label="Key benefits">
                                 {['Quality Certified Products', 'Monopoly Rights for Partners', 'Marketing Support', 'Pan-India Distribution'].map((item, idx) => (
@@ -301,7 +301,7 @@ const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
                             { icon: Microscope, title: 'Quality Products', desc: 'Comprehensive range of WHO-GMP certified pharmaceutical formulations across multiple therapeutic segments.' },
-                            { icon: ShieldCheck, title: 'Franchise Support', desc: 'Complete marketing and promotional support with monopoly rights for our PCD franchise partners.' },
+                            { icon: ShieldCheck, title: 'Franchise Support', desc: 'Complete marketing and promotional support with monopoly rights for our franchise partners.' },
                             { icon: Users, title: 'Customer Focus', desc: 'Dedicated to improving healthcare accessibility with affordable, effective medicines through our distribution network.' },
                         ].map((item, idx) => (
                             <div key={idx} className="bg-white rounded-xl p-8 shadow-card hover:shadow-card-hover transition-all">

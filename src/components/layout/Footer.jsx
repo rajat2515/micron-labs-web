@@ -14,7 +14,7 @@ const Footer = () => {
                         <span className="text-primary-orange ml-1">LABS</span>
                     </h3>
                     <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Leading PCD pharmaceutical company committed to providing high-quality, affordable medicines through our trusted franchise network since 2012.
+                        Leading pharmaceutical company committed to providing high-quality, affordable medicines through our trusted franchise network since 2012.
                     </p>
                     <div className="flex space-x-4">
                         <a href="#" className="text-gray-400 hover:text-primary-orange transition-colors"><Facebook size={20} /></a>
